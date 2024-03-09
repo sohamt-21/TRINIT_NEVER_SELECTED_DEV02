@@ -6,7 +6,7 @@ import {Routes,Route} from 'react-router-dom';
 import Profile from './Pages/Profile';
 import Student from './Pages/SampleProfiles/Student';
 import Tutor from './Pages/SampleProfiles/Tutor';
-import FilterTrial from './Pages/FilterTrial';
+import ViewTutor from './Pages/ViewTutor/ViewTutor';
 
 function App() {
   useEffect(() => {
@@ -30,6 +30,7 @@ function App() {
         <Route path='/studProfile' Component={Student} />
         <Route path='/TutProfile' Component={Tutor} />
         {/* <Route path='/' Component={FilterTrial} /> */}
+        <Route path='/view' Component={ViewTutor} />
     
       </Routes>
     </>
