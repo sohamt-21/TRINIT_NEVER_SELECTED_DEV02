@@ -1,7 +1,12 @@
 import {useEffect } from 'react'
 import './App.css'
 import Lenis from '@studio-freight/lenis'
-import BeforeSign from './Pages/BeforeSign/BeforeSign'
+import MainRender from './Pages/MainRender';
+import {Routes,Route} from 'react-router-dom';
+import Profile from './Pages/Profile';
+import Student from './Pages/SampleProfiles/Student';
+import Tutor from './Pages/SampleProfiles/Tutor';
+import FilterTrial from './Pages/FilterTrial';
 
 function App() {
 
@@ -21,7 +26,14 @@ function App() {
 
   return (
     <>
-      <BeforeSign/>
+      <Routes>
+        {/* <Route path='/' Component={MainRender} />
+        <Route path='/profile' Component={Profile} />
+        <Route path='/studProfile' Component={Student} />
+        <Route path='/TutProfile' Component={Tutor} /> */}
+        <Route path='/' Component={FilterTrial} />
+    
+      </Routes>
     </>
   )
 }
