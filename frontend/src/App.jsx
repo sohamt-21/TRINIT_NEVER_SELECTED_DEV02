@@ -1,4 +1,4 @@
-import {useEffect } from 'react'
+import { useEffect } from 'react'
 import './App.css'
 import Lenis from '@studio-freight/lenis'
 import MainRender from './Pages/MainRender';
@@ -9,7 +9,6 @@ import Tutor from './Pages/SampleProfiles/Tutor';
 import FilterTrial from './Pages/FilterTrial';
 
 function App() {
-
   useEffect(() => {
     const lenis = new Lenis()
 
@@ -23,15 +22,14 @@ function App() {
     }
     requestAnimationFrame(raf)
   }, [])
-
   return (
     <>
       <Routes>
-        {/* <Route path='/' Component={MainRender} />
+        <Route path='/' Component={MainRender} />
         <Route path='/profile' Component={Profile} />
         <Route path='/studProfile' Component={Student} />
-        <Route path='/TutProfile' Component={Tutor} /> */}
-        <Route path='/' Component={FilterTrial} />
+        <Route path='/TutProfile' Component={Tutor} />
+        {/* <Route path='/' Component={FilterTrial} /> */}
     
       </Routes>
     </>
