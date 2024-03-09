@@ -22,9 +22,8 @@ export function FloatingNavD() {
     },
   ];
   return (
-    <div className="relative  w-full">
+    <div className="relative  w-full bg-slate-400">
       <FloatingNav navItems={navItems} />
-      {/* <DummyContent /> */}
     </div>
   );
 }

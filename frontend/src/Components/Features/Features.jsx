@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 
 export function Features() {
     return (
-        <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+        <BentoGrid className="max-w-5xl mx-auto md:auto-rows-[20rem]">
             {items.map((item, i) => (
                 <BentoGridItem
                     key={i}

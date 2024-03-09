@@ -45,17 +45,25 @@ const Footer = (props) => {
 export default Footer
 
 function Logos({ scrollProgress }) {
-    const y = useTransform(scrollProgress, [0, 1], [-500, 0])
+    const y = useTransform(scrollProgress, [0, 1], [-600, 0])
     return (
-        <div style={{ height: '250px',backgroundColor: 'whitesmoke' , overflow:'hidden'}}>
+        <div style={{ height: '250px',backgroundColor: 'white' , overflow:'hidden'}}>
 
-            <motion.div style={{height:'100%', y, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '5px'}}>
-                {
-                    [...Array(4)].map((_, i) => {
-                        return <img key={i + 'i'} src={`../Asset/${i + 1}.png`} />
-                    })
-                }
-            </motion.div>
-        </div>
+        <motion.div style={{ y}}>
+            <p className='flex justify-center align-middle gap-1 text-12xl' style={{fontFamily:'Skyscapers'}}>Ling Connect</p>
+
+            <div>
+                <div className='flex flex-col justify-start '>
+                    <p className='text-black'>Services</p>
+                    <ul className=''>
+                        <a href="">Link 1</a>
+                        <a href="">Link 2</a>
+                        <a href="">Link 3</a>
+                        <a href="">Link 4</a>
+                    </ul>
+                </div>
+            </div>
+        </motion.div>
+    </div>
     )
 }
