@@ -2,7 +2,7 @@ import { SignOutButton, useUser } from '@clerk/clerk-react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-
+import Dropdown from '../Dropdown';
 
 
 export function NewNav() {
@@ -69,11 +69,12 @@ export function NewNav() {
         <h1 className='text-2xl dark:text-white' style={{ fontFamily: 'Skyscapers' }}>Lingua Connect</h1>
       </div>
       <div className="midnav flex gap-4 rounded-8xl h-3/4 align-middle  border-solid border border-slate-500 rounded-3xl">
-        <a className='px-2 text-black dark:text-white hover:underline my-2' href="/">Home</a>
+        <a className='px-2  text-black dark:text-white hover:underline my-2' href="/">Home</a>
         <a className='px-2 text-black dark:text-white hover:underline my-2' href="/about">About</a>
         <a className='px-2 text-black dark:text-white hover:underline my-2' href="/contact">Contact</a>
-        {!FilledProfile && <a className='px-2 text-black dark:text-white hover:underline my-2' onClick={MakeRequesttoBackendTutor}>Tutor</a>}
-        {!FilledProfile && <a className='px-2 text-black dark:text-white hover:underline my-2' onClick={MakeRequesttoBackendStudent}>Student</a>}
+        <Dropdown/>
+        {/* {!FilledProfile && <a className='px-2 text-black dark:text-white hover:underline my-2' onClick={MakeRequesttoBackendTutor}>Tutor</a>}
+        {!FilledProfile && <a className='px-2 text-black dark:text-white hover:underline my-2' onClick={MakeRequesttoBackendStudent}>Student</a>} */}
         
 
       </div>

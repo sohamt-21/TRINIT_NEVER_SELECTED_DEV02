@@ -12,7 +12,6 @@ export function Navbar() {
         <a className='px-2 text-black dark:text-white hover:underline my-2' href="/">Home</a>
         <a className='px-2 text-black dark:text-white hover:underline my-2' href="#features">Features</a>
         <a className='px-2 text-black dark:text-white hover:underline my-2' href="#footer">Contact</a>
-        <a className='px-2 text-black dark:text-white hover:underline my-2' href="/login">Login</a>
       </div>
       <div className="navright">
         <SignInButton  className='shadow-[inset_0_0_0_2px_#616467] px-8 py-2 rounded-full tracking-widest uppercase font-bold bg-transparent hover:bg-[#616467] hover:text-white dark:text-neutral-200 transition duration-200' />
