@@ -1,10 +1,9 @@
-import {useEffect } from 'react'
+import { useEffect } from 'react'
 import './App.css'
 import Lenis from '@studio-freight/lenis'
 import BeforeSign from './Pages/BeforeSign/BeforeSign'
 
 function App() {
-
   useEffect(() => {
     const lenis = new Lenis()
 
@@ -18,10 +17,9 @@ function App() {
     }
     requestAnimationFrame(raf)
   }, [])
-
   return (
     <>
-      <BeforeSign/>
+      <BeforeSign />
     </>
   )
 }

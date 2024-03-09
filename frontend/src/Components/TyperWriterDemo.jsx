@@ -1,5 +1,5 @@
 import { TypewriterEffectSmooth } from "../Components/ui/typewriter-effect";
-export function TypewriterEffectDemo() {
+export function TypewriterEffectSmoothDemo() {
     const words = [
         {
             text: "Learn",

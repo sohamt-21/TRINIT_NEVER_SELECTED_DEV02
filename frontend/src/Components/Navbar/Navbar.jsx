@@ -9,8 +9,8 @@ export function Navbar() {
       </div>
       <div className="midnav flex gap-4 rounded-8xl h-3/4 align-middle  border-solid border border-slate-500 rounded-3xl">
         <a className='px-2 text-black dark:text-white hover:underline my-2' href="/">Home</a>
-        <a className='px-2 text-black dark:text-white hover:underline my-2' href="/about">About</a>
-        <a className='px-2 text-black dark:text-white hover:underline my-2' href="/contact">Contact</a>
+        <a className='px-2 text-black dark:text-white hover:underline my-2' href="#features">Features</a>
+        <a className='px-2 text-black dark:text-white hover:underline my-2' href="#footer">Contact</a>
         <a className='px-2 text-black dark:text-white hover:underline my-2' href="/login">Login</a>
       </div>
       <div className="navright">
