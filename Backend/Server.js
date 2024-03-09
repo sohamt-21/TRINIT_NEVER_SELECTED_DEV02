@@ -7,8 +7,7 @@ const mongoose = require('mongoose');
 const BodyParser = require('body-parser');
 const WebsiteUserDB = require('./Models/WebsiteUsers');
 const NewTutorDB = require('./Models/NewTutor');
-// const data=require('../Filter/src/db/data');
-const Newdata = require('../Filter/src/db/NewData');
+const db=require('../Filter/src/db/Db');
 
 app.use(express.json());
 app.use(BodyParser.urlencoded({ extended: true }));
@@ -96,8 +95,8 @@ app.post("/GetListofTutors", async (req, res) => {
 
 
 app.post("/MakeManipulation", async (req, res) => {
-    Newdata.push(req.body.Data);
-    fs.writeFileSync('../Filter/src/db/NewData.js', `module.exports = ${JSON.stringify(Newdata, null, 2)};`);
+    db.push(req.body.Data);
+    fs.writeFileSync('../Filter/src/db/db.js', `module.exports = ${JSON.stringify(db, null, 2)};`);
 })
 
 

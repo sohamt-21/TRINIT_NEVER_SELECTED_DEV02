@@ -4,12 +4,12 @@ import axios from 'axios'
 const FilterTrial = () => {
 
     const SampleData = {
-        Image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.carwale.com%2Fnews%2F809bhp-sian-is-the-firstever-hybrid-lamborghini%2F&psig=AOvVaw0RpsmJykhMYbUa3vSaObXQ&ust=1710097344510000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCKCguJfv54QDFQAAAAAdAAAAABAZ",
-        Title: "Ferruccio Lamborghini-Italian",
-        Reacteviews: "(123 Learners)",
-        PrevPrice: "Rs 10000",
-        NewPrice: "Rs 5000",
-        Language: "Italain"
+        img: "https://images.pexels.com/photos/2127733/pexels-photo-2127733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        title: "Ferruccio Lamborghini-Italian",
+        reacteviews: "(123 Learners)",
+        packagerevPrice: "Rs 10000",
+        newPrice: "Rs 5000",
+        language: "Italain"
     }
 
     const MakedataBaseAppend=async(e)=>{
