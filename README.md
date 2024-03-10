@@ -8,9 +8,16 @@ TRINIT_NEVER_SELECTED_DEV02
 <ul>
   <li>
     <p>Filter Search Functionlaity</p>
+  </li>
+  <li>
     <p>Inegrated Meet Platform</p>
+  </li>
+  <li>
     <p>Bulit in customizable Schedule Calender</p>
-    <p>Stripe Payment Gateway</p>
+  </li>
+    <li>
+      <p>Stripe Payment Gateway</p>
+    </li>
   </li>
 </ul>
 
