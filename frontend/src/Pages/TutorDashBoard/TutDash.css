@@ -1,0 +1,299 @@
+.maindiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+.Buttons {
+
+    position: absolute;
+    top: 50%;
+    right: 20%;
+
+    padding: 40px;
+    border: 2px solid white;
+}
+
+#admin_grp_form {
+    display: flex;
+    width: 400px;
+    margin: auto;
+    /* align-self: center; */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+
+    transform: translate(-50%, -50%);
+}
+
+.Profileee {
+    text-align: right;
+    padding-right: 25%;
+}
+
+#admin_grp_form_sub {
+    display: flex;
+    flex-direction: column;
+}
+
+#admin_grp_form_h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.admin_grp_form-label {
+    font-weight: bold;
+}
+
+.admin_grp_form-control {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.admin_grp_form_btn {
+    width: 6.5em;
+    height: 3em;
+    margin: auto;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.admin_grp_form_btn:hover {
+    color: black;
+}
+
+.admin_grp_form_btn:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+.admin_grp_form_btn:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.register-main {
+    display: flex;
+}
+
+.register-left {
+    flex: 1;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.register-left img {
+    width: 100%;
+    height: auto;
+}
+
+.register-right {
+    flex: 1;
+    height: 100vh;
+}
+
+.register-right-container {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register-right form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-logo {
+    align-self: center;
+    padding-top: 10px;
+}
+
+.register-center {
+    margin: auto 0;
+}
+
+.register-logo img {
+    width: 140px;
+}
+
+.register-center h2 {
+    font-size: 35px;
+}
+
+.register-center {
+    text-align: center;
+}
+
+.register-center p {
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+form input[type="email"],
+form input[type="password"],
+form input[type="text"] {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 16px;
+    border: 0px;
+    border-bottom: 1px solid black;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.pass-input-div {
+    position: relative;
+}
+
+.pass-input-div svg {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 35px;
+    cursor: pointer;
+    outline: none;
+}
+
+form button[type="submit"] {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.register-center-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-div {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.remember-div label {
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 2px;
+}
+
+.forgot-pass-link {
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.forgot-pass-link:hover {
+    text-decoration: underline;
+}
+
+.register-center-buttons {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.register-center-buttons button:nth-child(1) {
+    background-color: black;
+    color: white;
+    border: 3px solid black;
+    transition: background 1s linear 0ms;
+    transition: color 500ms linear 0ms;
+}
+
+.register-center-buttons button:nth-child(1):hover {
+    color: #333;
+    background-color: white;
+}
+
+.register-center-buttons button:nth-child(2) {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    transition: background 500ms linear 0ms;
+}
+
+.register-center-buttons button:nth-child(2) img {
+    width: 30px;
+}
+
+.register-center-buttons button:nth-child(2):hover {
+    background: #c4c4c4c2;
+}
+
+.register-bottom-p {
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 40px;
+}
+
+.register-bottom-p a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-bottom-p a:hover {
+    text-decoration: underline;
+}
+
+.FirstButton {
+    padding: 20px;
+}
+
+.FirstButton :hover {
+    text-decoration: underline;
+    background-color: gray;
+}
+
+.SecondButton :hover {
+    text-decoration: underline;
+    background-color: gray;
+}
+
+.SecondButton {
+    padding: 20px;
+}

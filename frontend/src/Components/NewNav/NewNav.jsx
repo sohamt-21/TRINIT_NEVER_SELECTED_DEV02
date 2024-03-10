@@ -33,36 +33,7 @@ export function NewNav() {
 
   }
 
-  const MakeRequesttoBackendTutor = async (e) => {
-    e.preventDefault();
-    const User = {
-      Name: user.fullName,
-      Email: user.primaryEmailAddress.emailAddress,
-      Role: 'Tutor'
-    }
-
-    await axios.post("http://localhost:9000/RegisterUser", { User: User }, { withCredential: true }).then((res) => {
-      console.log(`User Has Been Added` + res.data);
-    }).catch((err) => {
-      console.log(`Error is Occured : ${err}`);
-    })
-  }
-
-  const MakeRequesttoBackendStudent= async (e) => {
-    e.preventDefault();
-    const User = {
-      Name: user.fullName,
-      Email: user.primaryEmailAddress.emailAddress,
-      Role: 'Student'
-    }
-
-    await axios.post("http://localhost:9000/RegisterUser", { User: User }, { withCredential: true }).then((res) => {
-      console.log(`User Has Been Added` + res.data);
-    }).catch((err) => {
-      console.log(`Error is Occured : ${err}`);
-    })
-  }
-
+  
   return (
     <div className='flex justify-around items-center w-full h-16 '>
       <div className='navleft'>
@@ -72,11 +43,8 @@ export function NewNav() {
         <a className='px-2  text-black dark:text-white hover:underline my-2' href="/">Home</a>
         <a className='px-2 text-black dark:text-white hover:underline my-2' href="/about">About</a>
         <a className='px-2 text-black dark:text-white hover:underline my-2' href="/contact">Contact</a>
+        {RoleOfUser=="Tutor"?<><a className='px-2 text-black dark:text-white hover:underline my-2' href={"/tutDash"}>Dashboard</a></>:RoleOfUser=="Student"?<> <a className='px-2 text-black dark:text-white hover:underline my-2' href={"http://localhost:3000"}>View Tutors</a></>:<></>}
         <Dropdown/>
-        {/* {!FilledProfile && <a className='px-2 text-black dark:text-white hover:underline my-2' onClick={MakeRequesttoBackendTutor}>Tutor</a>}
-        {!FilledProfile && <a className='px-2 text-black dark:text-white hover:underline my-2' onClick={MakeRequesttoBackendStudent}>Student</a>} */}
-        
-
       </div>
       <div className="navright flex gap-5 my-9" >
         <img src={user.imageUrl} alt='👤' style={{ height: "50px", width: "50px", borderRadius: "50%" }} />
