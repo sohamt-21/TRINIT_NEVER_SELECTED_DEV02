@@ -1,13 +1,13 @@
 const express = require('express');
 const app = express();
-const fs=require('fs');
+const fs = require('fs');
 const PORT = 9000;
 const CORS = require('cors');
 const mongoose = require('mongoose');
 const BodyParser = require('body-parser');
 const WebsiteUserDB = require('./Models/WebsiteUsers');
 const NewTutorDB = require('./Models/NewTutor');
-const db=require('../Filter/src/db/Db');
+const db = require('../Filter/src/db/Db');
 
 app.use(express.json());
 app.use(BodyParser.urlencoded({ extended: true }));
@@ -17,6 +17,8 @@ app.use(CORS(({
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
 })));
+
+const stripe = require('stripe')('sk_test_51N7Vn6SAIfD6oaTkf4yekt1jFhd1OJmJMHxaT0wy1tfIeMa1yX5BdZS9PoKPIkHCD9m4uWXgkkxECIKPvCyF9JlR00BIa4PF0U');
 
 mongoose.connect("mongodb://0.0.0.0:27017/ConnectUsers").then(() => {
     console.log("Connected To MongoDBCompass");
@@ -97,6 +99,20 @@ app.post("/GetListofTutors", async (req, res) => {
 app.post("/MakeManipulation", async (req, res) => {
     db.push(req.body.Data);
     fs.writeFileSync('../Filter/src/db/db.js', `module.exports = ${JSON.stringify(db, null, 2)};`);
+})
+
+app.post('/CreatePayment', async (req, res) => {
+    const paymentIntent = await stripe.paymentIntents.create({
+        amount: 400000,
+        currency: 'inr',
+        automatic_payment_methods: {
+          enabled: true,
+        },
+      });
+      const intent = paymentIntent;
+      console.log(`Your Client Secret is : ${intent.client_secret}`);
+      fs.writeFileSync('../frontend/src/client.txt',`${intent.client_secret}`);
+      res.send(`${intent.client_secret}`)
 })
 
 

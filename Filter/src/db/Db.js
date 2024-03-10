@@ -224,11 +224,11 @@ module.exports = [
     "language": "German"
   },
   {
-    "img": "https://images.pexels.com/photos/2127733/pexels-photo-2127733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    "title": "Ferruccio Lamborghini-Italian",
-    "reacteviews": "(123 Learners)",
-    "packagerevPrice": "Rs 10000",
-    "newPrice": "Rs 5000",
-    "language": "Italain"
+    "img": "https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ2l0aHViL2ltZ18yYzlCMk5tenBnQWJya3c3VzZrTjdjaTFja0sifQ",
+    "title": "Aditya",
+    "reviews": "(78973 Learners)",
+    "prevPrice": "Rs 10000",
+    "newPrice": "RS 10000",
+    "language": "Japanese"
   }
 ];

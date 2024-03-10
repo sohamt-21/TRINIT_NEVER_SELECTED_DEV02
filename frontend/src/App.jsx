@@ -4,9 +4,10 @@ import Lenis from '@studio-freight/lenis'
 import MainRender from './Pages/MainRender';
 import {Routes,Route} from 'react-router-dom';
 import Profile from './Pages/Profile';
-import Student from './Pages/SampleProfiles/Student';
-import Tutor from './Pages/SampleProfiles/Tutor';
+import TutDash from './Pages/TutorDashBoard/TutDash';
 import ViewTutor from './Pages/ViewTutor/ViewTutor';
+import StriprWrapper from './Pages/ViewTutor/StripeWrapper';
+
 
 function App() {
   useEffect(() => {
@@ -27,11 +28,9 @@ function App() {
       <Routes>
         <Route path='/' Component={MainRender} />
         <Route path='/profile' Component={Profile} />
-        <Route path='/studProfile' Component={Student} />
-        <Route path='/TutProfile' Component={Tutor} />
-        {/* <Route path='/' Component={FilterTrial} /> */}
-        <Route path='/view' Component={ViewTutor} />
-    
+        <Route path='/view' element={<ViewTutor/>} />
+        <Route path='/stripe' Component={StriprWrapper} />
+        <Route path='/tutDash' Component={TutDash} />
       </Routes>
     </>
   )

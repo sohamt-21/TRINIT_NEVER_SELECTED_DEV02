@@ -1,9 +1,14 @@
 import { BsFillBagFill } from "react-icons/bs";
 
 const Card = ({ img, title, star, reviews, prevPrice, newPrice }) => {
+
+  const RedirecToTutorPage=async()=>{
+    window.location.href="http://localhost:5173/view"
+  }
+
   return (
     <>
-      <section className="card">
+      <section className="card" onClick={RedirecToTutorPage}>
         <img src={img} alt={title} className="card-img" />
         <div className="card-details">
           <h3 className="card-title">{title}</h3>
