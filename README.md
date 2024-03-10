@@ -33,9 +33,33 @@ TRINIT_NEVER_SELECTED_DEV02
   ```
 
 ## How to Run ?? : 
+1. Go to Frontend folder
+    ```sh
+  npm install 
+  ```
+If Any Error Occures Follow this one
+  ```sh
+  npm install --force
+  ```
 
+2. Be in Frontend Folder and run
+     ```sh
+  npm run dev 
+  ```
 
+3. Frontend Starts working on localhost:5173 and do  not kill this terminal
 
+4. Go to Backend folder and
+  ```sh
+npm install
+  ```
+
+5. Run the command
+     ```sh
+  Node Server.js
+  ```
+   
+6. You are Good to GO 😄
 
 
 ## Deployed Url :
