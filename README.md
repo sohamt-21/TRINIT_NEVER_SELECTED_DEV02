@@ -3,6 +3,7 @@ TRINIT_NEVER_SELECTED_DEV02
 ## Problem Statement : To design and develop an interactive online platform that connects language learners with teachers for personalized online lessons by offering a platform where learners can choose a tutor based on their target language, fluency, budget and schedule
 
 ## Video Demo : https://drive.google.com/file/d/1zdH6iS342eU-isw0oXNlFovZcpWOJLzu/view?usp=sharing   (Please watch at 1.75x or 2x)
+
 ## Features :
 
 
@@ -13,12 +14,29 @@ TRINIT_NEVER_SELECTED_DEV02
 [![ExpressJs](https://skillicons.dev/icons?i=express&perline=3)](https://skillicons.dev)&nbsp;&nbsp;
 [![MongoDb](https://skillicons.dev/icons?i=mongodb&perline=3)](https://skillicons.dev)&nbsp;&nbsp;
 
-## Screenshots
+## Screenshots : 
+
 
 ## Pre-Requisite: 
-## How to run
 
-## Deployed Url
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+  
+* NodeJs
+  ```sh
+  Download Nodejs Version ^ 18.0.0 LTS 
+  ```
+
+## How to Run ?? : 
+
+
+
+
+
+## Deployed Url :
+
 ### This is Deployed link for Platform : 
 
 ### This is Deployed link for Meet : [Meet](https://refmemeet.vercel.app)
