@@ -65,9 +65,6 @@ npm install
 
 ## Deployed Url :
 
-### This is Deployed link for Platform : 
+### This is Deployed link for Platform : https://trinit-never-selected-dev-02.vercel.app/
 
-### This is Deployed link for Meet : [Meet](https://refmemeet.vercel.app)
-
-
-### This is Deployed link for Social app : [App](https://org-connect-amber.vercel.app)
+### This is Deployed link for Meet : https://refmemeet.vercel.app
