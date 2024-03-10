@@ -32,7 +32,7 @@ const Footer = (props) => {
                 <text style={{ fill: 'red', fontSize: '14px', fontFamily: 'Skyscapers' }}>
                     {
                         [...Array(3)].map((_, i) => {
-                            return <textPath key={i} href="#MyPath" ref={ref => texts.current[i] = ref} startOffset={i * 40 + "%"}>This Will be A Tagling For Platform</textPath>
+                            return <textPath key={i} href="#MyPath" ref={ref => texts.current[i] = ref} startOffset={i * 40 + "%"}>Unlock Your Language Potential</textPath>
                         })
                     }
                 </text>
