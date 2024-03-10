@@ -5,7 +5,14 @@ TRINIT_NEVER_SELECTED_DEV02
 ## Video Demo : https://drive.google.com/file/d/1zdH6iS342eU-isw0oXNlFovZcpWOJLzu/view?usp=sharing   (Please watch at 1.75x or 2x)
 
 ## Features :
-
+<ul>
+  <li>
+    <p>Filter Search Functionlaity</p>
+    <p>Inegrated Meet Platform</p>
+    <p>Bulit in customizable Schedule Calender</p>
+    <p>Stripe Payment Gateway</p>
+  </li>
+</ul>
 
 
 ## Tech Stack
