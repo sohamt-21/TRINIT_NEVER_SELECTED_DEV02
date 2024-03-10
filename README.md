@@ -28,31 +28,32 @@ TRINIT_NEVER_SELECTED_DEV02
   ```
   
 * NodeJs
-  ```sh
+```sh
   Download Nodejs Version ^ 18.0.0 LTS 
-  ```
+```
 
 ## How to Run ?? : 
+
 1. Go to Frontend folder
-    ```sh
+```sh
   npm install 
-  ```
+```
 If Any Error Occures Follow this one
-  ```sh
+```sh
   npm install --force
-  ```
+```
 
 2. Be in Frontend Folder and run
-     ```sh
+```sh
   npm run dev 
-  ```
+```
 
 3. Frontend Starts working on localhost:5173 and do  not kill this terminal
 
 4. Go to Backend folder and
-  ```sh
+```sh
 npm install
-  ```
+```
 
 5. Run the command
      ```sh
