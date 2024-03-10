@@ -56,9 +56,9 @@ npm install
 ```
 
 5. Run the command
-     ```sh
+ ```sh
   Node Server.js
-  ```
+ ```
    
 6. You are Good to GO 😄
 
