@@ -43,7 +43,7 @@ const Footer = (props) => {
                 <div className='leftFoot flex flex-row gap-3 '>
                     <div className='px-3'>
                         <p className='font-bold font-semibold text-sm'>Email</p>
-                        <a href="" className='text-sm'>harshal.ingale21@vit.edu</a>
+                        <a href="" className='text-sm'>langconnect@help.com</a>
                     </div>
 
                     <div>
@@ -84,7 +84,7 @@ function Logos({ scrollProgress }) {
         <div style={{ height: '250px', backgroundColor: 'white', overflow: 'hidden' }}>
 
             <motion.div style={{ height: '100%', y, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '5px' }}>
-                <p className='flex justify-center align-middle gap-1 text-12xl' style={{ fontFamily: 'Skyscapers' }}>Ling Connect</p>
+                <p className='flex justify-center align-middle gap-1 text-12xl' style={{ fontFamily: 'Skyscapers' }}>Lang Connect</p>
             </motion.div>
 
         </div>

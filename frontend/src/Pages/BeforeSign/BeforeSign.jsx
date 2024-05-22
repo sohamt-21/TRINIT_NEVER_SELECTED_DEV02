@@ -15,7 +15,7 @@ const BeforeSign = () => {
         <GridBackgroundDemo/>
         <FloatingNavD/>
         <Features/>
-        <StickyScrollRevealDemo/>
+        {/* <StickyScrollRevealDemo/> */}
         <Footer/>
     </div>
   )

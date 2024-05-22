@@ -294,7 +294,7 @@ const SkeletonFive = () => {
                     className="rounded-full h-10 w-10"
                 />
                 <p className="text-xs text-neutral-500">
-                    Your OTP for the trascation ID 8201II12 to LinguaConnect is 006900. Do not share this OTP with anyone.
+                    Your OTP for the trascation ID 8201II12 to LangConnect is 006900. Do not share this OTP with anyone.
                 </p>
             </motion.div>
             <motion.div

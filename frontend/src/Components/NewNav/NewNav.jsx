@@ -37,7 +37,7 @@ export function NewNav() {
   return (
     <div className='flex justify-around items-center w-full h-16 '>
       <div className='navleft'>
-        <h1 className='text-2xl dark:text-white' style={{ fontFamily: 'Skyscapers' }}>Lingua Connect</h1>
+        <h1 className='text-2xl dark:text-white' style={{ fontFamily: 'Skyscapers' }}>Lang Connect</h1>
       </div>
       <div className="midnav flex gap-4 rounded-8xl h-3/4 align-middle  border-solid border border-slate-500 rounded-3xl">
         <a className='px-2  text-black dark:text-white hover:underline my-2' href="/">Home</a>

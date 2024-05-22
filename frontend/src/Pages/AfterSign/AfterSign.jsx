@@ -15,7 +15,7 @@ const AfterSign = () => {
         <GridBackgroundDemo/>
         <FloatingNavD/>
         <Features/>
-        <StickyScrollRevealDemo/>
+        {/* <StickyScrollRevealDemo/> */}
         <Footer/>
     </div>
   )

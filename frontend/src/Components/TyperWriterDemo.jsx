@@ -14,7 +14,7 @@ export function TypewriterEffectSmoothDemo() {
             text: "with",
         },
         {
-            text: "Ling Connect",
+            text: "Lang Connect",
             className: "text-blue-500 dark:text-blue-500",
         },
     ];
